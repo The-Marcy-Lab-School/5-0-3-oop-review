@@ -155,7 +155,7 @@ const nicoleB = new Student('Nicole', 8);
 const nicoleJ = new Student('Nicole', 7);
 const nico = new Student('nico', 9);
 
-// Building the one-to-many relationship
+
 ben.addStudent(nico);
 Gonzalo.addStudent(nicoleB);
 
@@ -170,28 +170,32 @@ motun.listStudents();
 ```
 
 
-## Challenge
+# Challenge
 
-Challenge: Library Class
-Instructions:
-Private Properties:
+## Library Class
 
-Utilize private properties using the # notation for encapsulation.
+### Instructions:
+
+### Private Properties:
+
+* Utilize private properties using the # notation for encapsulation.
 Public Properties:
 
-Include public properties:
-name: the name of the library.
-location: the location of the library.
-books: an array to store book objects.
-Methods:
+### Include public properties:
 
-Implement an instance method addBook(title, author, genre) that adds a book to the library. Each book should have a unique ID.
-Implement an instance method removeBook(bookID) that removes a book from the library based on its ID.
-Implement an instance method listBooks() that logs information about all books in the library.
-Implement a static method generateLibraryName() that generates a random library name.
+* name: the name of the library.
+  * location: the location of the library.
+  * books: an array to store book objects.
+
+### Methods:
+
+* Implement an instance method addBook(title, author, genre) that adds a book to the library. Each book should have a unique ID.
+* Implement an instance method removeBook(bookID) that removes a book from the library based on its ID.
+* Implement an instance method listBooks() that logs information about all books in the library.
+* Implement a static method generateLibraryName() that generates a random library name.
 
 ```js
-// Creating instances
+
 const cityLibrary = new Library('City Library', '123 Main St');
 
 // Adding books to the library
@@ -210,6 +214,6 @@ cityLibrary.listBooks();
 
 ```
 Additional Notes:
-Use a private method for generating unique book IDs.
-Feel free to add any additional methods or properties that you think would enhance the functionality of the Library class.
-Ensure that the methods access and manipulate private properties where necessary for encapsulation.
+* Use a private method for generating unique book IDs.
+* Feel free to add any additional methods or properties that you think would enhance the functionality of the Library class.
+* Ensure that the methods access and manipulate private properties where necessary for encapsulation.
